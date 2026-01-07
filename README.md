@@ -1,16 +1,17 @@
-# Login and Registration System
+# Login & Registration System (C++)
 
-A simple C++ program for user login and registration.
+A simple console-based login and registration system in C++ that stores user credentials in a text file.  
+Created as an internship task at **CodeAlpha**.
 
 ## Features
-- User registration
-- User login
-- Records stored in usersRecords.txt
+- Register a new user (with validation).
+- Prevent duplicate usernames.
+- Login using saved credentials from `usersRecords.txt`.
 
-## How to Compile and Run
-1. Ensure you have a C++ compiler (e.g., g++).
-2. Compile: `g++ loginSystem.cpp -o loginSystem`
-3. Run: `./loginSystem` (or `loginSystem.exe` on Windows)
+## File Used
+- `usersRecords.txt` stores: `username password` (one record per line).
 
-## Usage
-Follow the on-screen prompts to register or login.
+## Compile & Run
+```bash
+g++ main.cpp -o app
+./app
